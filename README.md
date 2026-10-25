@@ -118,9 +118,9 @@ Comprobación de que las ramas existen y de que seguimos en `main`:
 ### 4.1 ¿Por qué ocurrió el conflicto en la PARTE 3 y por qué no ocurrió en la PARTE 2?
 
 En la PARTE 2 no hubo conflicto porque cada rama modificó un archivo distinto header.html, content.html y footer.html. Al fusionar, Git pudo combinar los cambios automáticamente, ya que ninguna rama tocaba las mismas 
-líneas de un mismo archivo. Además, que ni siquiera requiere combinar contenido.
-En la PARTE 3 el conflicto apareció porque las dos ramas main y rediseño modificaron la misma línea <h1> del mismo archivo index.html a partir de un ancestro común, con valores distintos. Git no puede decidir 
-automáticamente cuál de las dos versiones es la correcta, así que detiene la fusión, marca el conflicto en el archivo y delega la decisión en el desarrollador.
+líneas de un mismo archivo. Además, que ni siquiera requiere combinar contenido. En la PARTE 3 el conflicto apareció porque las dos ramas main y rediseño modificaron la misma línea <h1> del mismo archivo index.html a 
+partir de un ancestro común, con valores distintos. Git no puede decidir automáticamente cuál de las dos versiones es la correcta, así que detiene la fusión, marca el conflicto en el archivo y delega la decisión en el
+desarrollador.
 
 ### 4.2 Al ejecutar git switch main en la PARTE 3.2, ¿qué ocurrió con los archivos de tu directorio de trabajo?
 
