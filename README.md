@@ -102,7 +102,7 @@ git add content.html
 git commit -m "C3: Creado contenido principal"
 ```
 
-![Captura 7 - Rama contenido y commit C3](Imagenes/1.png)
+![Captura 7 - Rama contenido y commit C3](Imagenes/7.png)
 
 ### 2.4 Desarrollo en la rama `pie`
 
@@ -124,8 +124,6 @@ git commit -m "C4: Añadido pie de página"
 ```
 
 ![Captura 8 - Rama pie y commit C4](Imagenes/7.png)
-
-![Captura 9 - commit C4](Imagenes/8.png)
 
 ---
 
