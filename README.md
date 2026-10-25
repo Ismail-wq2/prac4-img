@@ -117,16 +117,12 @@ Comprobación de que las ramas existen y de que seguimos en `main`:
 
 ### 4.1 ¿Por qué ocurrió el conflicto en la PARTE 3 y por qué no ocurrió en la PARTE 2?
 
-En la PARTE 2 no hubo conflicto porque cada rama modificó un archivo distinto header.html, content.html y footer.html. Al fusionar, Git pudo combinar los cambios automáticamente, ya que ninguna rama tocaba las mismas 
-líneas de un mismo archivo. Además, que ni siquiera requiere combinar contenido. En la PARTE 3 el conflicto apareció porque las dos ramas main y rediseño modificaron la misma línea <h1> del mismo archivo index.html a 
-partir de un ancestro común, con valores distintos. Git no puede decidir automáticamente cuál de las dos versiones es la correcta, así que detiene la fusión, marca el conflicto en el archivo y delega la decisión en el
-desarrollador.
+En la PARTE 2 no hubo conflicto porque cada rama modificó un archivo distinto, es decir header.html, content.html y footer.html. Al fusionar, Git pudo combinar los cambios automáticamente, ya que ninguna rama tocaba las mismas líneas de un mismo archivo. Además, la primera fusión, la de cabecera, fue un Fast-Forward, que ni siquiera requiere combinar contenido.
+En la PARTE 3 el conflicto apareció porque las dos ramas, main y rediseño, modificaron la misma línea del mismo archivo, la del h1 de index.html, a partir de un ancestro común y con valores distintos. Git no puede decidir automáticamente cuál de las dos versiones es la correcta, así que detiene la fusión, marca el conflicto en el archivo y delega la decisión en el desarrollador.
 
 ### 4.2 Al ejecutar git switch main en la PARTE 3.2, ¿qué ocurrió con los archivos de tu directorio de trabajo?
 
-Git actualizó el directorio de trabajo para reflejar el último commit de la rama main. Como index.html en rediseño tenía el <h1> modificado (WebNova - Sitio oficial (Rediseño 2026)), al cambiar a main el archivo volvió 
-automáticamente a su versión anterior, con el título original de main. Los cambios de rediseño no se pierden: quedan guardados en su commit (C6), y Git solo reescribe el contenido del directorio para que coincida con la 
-rama activa.
+Git actualizó el directorio de trabajo para reflejar el último commit de la rama main. Como index.html en rediseño tenía el h1 modificado con el título de rediseño, al cambiar a main el archivo volvió automáticamente a su versión anterior, con el título original de main. Los cambios de rediseño no se pierden, porque quedan guardados en su commit C6, y Git solo reescribe el contenido del directorio para que coincida con la rama activa.
 
 ---
 
