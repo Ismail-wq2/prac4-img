@@ -18,7 +18,7 @@ git config --global init.defaultBranch main
 git init
 ```
 
-![Captura 2 - git init](Imagenes/1.png)
+![Captura 2 - git init](Imagenes/2.png)
 
 ### 1.3 Crear el archivo base `index.html`
 
@@ -27,7 +27,7 @@ git init
 <p>Versión inicial del proyecto</p>
 ```
 
-![Captura 3 - index.html inicial](Imagenes/1.png)
+![Captura 3 - index.html inicial](Imagenes/3.png)
 
 ### 1.4 Primer commit (C1)
 
@@ -36,7 +36,7 @@ git add .
 git commit -m "C1: Versión inicial de WebNova"
 ```
 
-![Captura 4 - Commit C1](Imagenes/1.png)
+![Captura 4 - Commit C1](Imagenes/4.png)
 
 ---
 
@@ -56,7 +56,7 @@ Comprobación de que las ramas existen y de que seguimos en `main`:
 git branch
 ```
 
-![Captura 5 - Listado de ramas](Imagenes/1.png)
+![Captura 5 - Listado de ramas](Imagenes/5.png)
 
 ### 2.2 Desarrollo en la rama `cabecera`
 
@@ -80,7 +80,7 @@ git add header.html
 git commit -m "C2: Añadido encabezado con navegación"
 ```
 
-![Captura 6 - Rama cabecera y commit C2](Imagenes/1.png)
+![Captura 6 - Rama cabecera y commit C2](Imagenes/6.png)
 
 ### 2.3 Desarrollo en la rama `contenido`
 
@@ -123,7 +123,9 @@ git add footer.html
 git commit -m "C4: Añadido pie de página"
 ```
 
-![Captura 8 - Rama pie y commit C4](Imagenes/1.png)
+![Captura 8 - Rama pie y commit C4](Imagenes/7.png)
+
+![Captura 9 - commit C4](Imagenes/8.png)
 
 ---
 
